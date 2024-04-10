@@ -1,6 +1,6 @@
-# LESS to VW Converter
+# PX,REM,EM to VW Converter
 
-This web application converts files containing CSS unit values from px, em, and rem to vw units within LESS files.
+This web application converts files containing CSS unit values from px, em, and rem to vw units within LESS and CSS files.
 
 ## Getting Started
 
