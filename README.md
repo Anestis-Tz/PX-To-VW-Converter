@@ -45,5 +45,5 @@ You can then access the application at http://localhost:5000 in your web browser
 Using the Application
 1. Navigate to http://localhost:5000 in your web browser.
 2. Use the interface to upload a .less file.
-3. Click the "Upload" button to convert the file. The application will automatically download the converted file once the process is complete.
+3. Click the "Convert" button to convert the file. The application will automatically download both the converted file and the original one once the process is complete.
 
