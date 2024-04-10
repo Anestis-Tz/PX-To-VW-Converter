@@ -36,7 +36,7 @@ def upload_file():
         if file.filename == '':
             return 'No selected file'
 
-        if file and file.filename.endswith('.less'):
+        if file and (file.filename.endswith('.less') or file.filename.endswith('.css')):
             # Create a unique folder for the uploaded file
             unique_folder = file.filename.rsplit('.', 1)[0]
             unique_folder_path = os.path.join(app.config['UPLOAD_FOLDER'], unique_folder)
@@ -56,7 +56,6 @@ def upload_file():
             with open(converted_filepath, 'w') as f:
                 f.write(converted_content)
 
-            # Send the converted file to the user
             return send_file(converted_filepath, as_attachment=True)
 
     return render_template_string('''
